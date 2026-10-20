@@ -46,9 +46,6 @@ To make small edits, open a file in GitHub and click the pencil icon. Change the
 - No unpublished sensitive material appears anywhere in the site.
 
 ## Reference and alternative
-
-- Nikolaj Thams's site: https://nikolajthams.github.io/
-- His public repository: https://github.com/nikolajthams/nikolajthams.github.io
 - Original Jekyll template that his repo was forked from: https://github.com/alshedivat/al-folio
 - Official GitHub Pages setup: https://docs.github.com/en/pages/quickstart
 
