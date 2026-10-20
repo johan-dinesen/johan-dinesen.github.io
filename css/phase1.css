@@ -59,3 +59,13 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.28}h1{font-size:clamp(2.15rem,4.7
 .simple-page h2{font-size:1.17rem}
 .reference-list li,.talk-list li{margin-bottom:13px}
 }
+
+/* Events follow the same compact one-line list style as Talks. */
+.events-page {width:min(calc(100% - 48px),1120px);max-width:1120px;}
+.event-list {padding-left:22px;margin:0;}
+.event-list li {padding-left:2px;margin:0 0 10px;}
+.event-list time {font-variant-numeric:tabular-nums;white-space:nowrap;}
+@media(max-width:650px){
+  .events-page{width:min(calc(100% - 32px),1120px);}
+  .event-list li{margin-bottom:13px;}
+}

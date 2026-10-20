@@ -1,28 +1,29 @@
-# Johan V. Dinesen academic website: focused 3-page revision
+# Johan V. Dinesen | Add Events page (four-page site)
 
-This folder contains ONLY the three pages currently under revision: About, Research and Talks. The existing CV, Publications, Teaching and other pages are intentionally not modified or included.
+This is the **latest** four-page version: **About · Research · Talks · Events**.
+It is based directly on the previous clean three-page site. The existing About, Research and Talks page content has not been rewritten; only the navigation has been extended.
 
-## Files
+## What is in the Events page
 
-- `index.html` — restored earlier homepage design, including the optional portrait column.
-- `research.html` — brief research introduction and compact numbered publications, following the general organization of matteobonini.eu/research.html.
-- `talks.html` — one reverse-chronological bulleted list of 14 invited and contributed talks from your September 2026 CV, following the general structure of matteobonini.eu/talks.html.
-- `css/phase1.css` — standalone styling for these three pages, retaining the older homepage CSS.
-- `assets/favicon.svg` — favicon.
+- **Organized Events:** the Finnish Mathematical Days 2026 coding-theory session and the 2024 Workshop on Secure and Private Distributed Computation.
+- **Conferences, Workshops and Schools Attended:** a compact reverse-chronological list drawn from the September 2026 academic CV.
+- **Upcoming events:** no dates were provided, so no unverified upcoming-event entries were invented. Add them later when they are confirmed.
+- Actual event date ranges were checked against official sources where links are given. Where only a month is documented in the CV, the month is shown rather than inventing a conference date range.
 
-**Portrait:** Place your actual portrait at `assets/profile.jpg`. Until it exists, the About page hides the missing photo rather than showing an image error or an affiliation box. No placeholder profile picture is included.
+## Upload these files to your existing GitHub Pages repository
 
-## Upload to your GitHub Pages repository
+1. **Extract** this ZIP on your computer. Do not upload the ZIP itself.
+2. Upload **all four HTML files at the repository root**: `index.html`, `research.html`, `talks.html`, and the new `events.html`. The first three files include a new Events link in their navigation.
+3. Upload `css/phase1.css`, updating the existing stylesheet. Keep its folder structure as `css/phase1.css`.
+4. `assets/favicon.svg` and `.nojekyll` are included for completeness and may be retained from your current site.
+5. **Do not delete** your custom-domain `CNAME` file or `assets/profile.jpg`. Neither is included in this archive.
+6. If your GitHub Pages deployment uses **Deploy from a branch**, edit the branch/folder configured in **Settings > Pages**. If you use a GitHub Actions workflow, edit the actual deployed source instead.
+7. Commit the changes and verify that the navigation works on `/`, `/research.html`, `/talks.html`, and `/events.html`. Hard-refresh the browser after deployment.
 
-1. Extract the ZIP.
-2. Upload the 3 HTML files, `css/phase1.css`, `assets/favicon.svg` and `.nojekyll` to your repository, keeping the folder structure. Do not remove your other existing files.
-3. Add `assets/profile.jpg` whenever you have a portrait to use.
-4. GitHub Pages will show About (`/`), Research (`/research.html`) and Talks (`/talks.html`).
+### Important: old pages
 
-The new pages deliberately use `css/phase1.css` rather than overwriting `css/style.css`, which avoids modifying the unfinished CV and Teaching pages.
+Uploading the ZIP's extracted files does not remove old pages. If `cv.html`, `teaching.html`, or `publications.html` still exist in the publishing branch, those old URLs remain accessible until those pages are explicitly deleted. This package intentionally does not include them.
 
-The research bibliography preserves the publication and submission statuses recorded in the September 2026 CV. Please review those statuses before making the site public.
+### Before adding future events
 
-External links to the two published papers use their verified DOIs. Preprint links use the identifiers in the CV.
-
-The email uses your requested obfuscated plain-text format.
+Only confirmable events from the 2026 CV were included. If you want to add attendance not reflected in the CV, or future events, edit `events.html` under the relevant list or create an Upcoming Events section. External links use the event organizers' official websites where available.
