@@ -39,7 +39,6 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.28}h1{font-size:clamp(2.15rem,4.7
 /* Phase 1: compact scholarly lists, without changing the earlier About page. */
 .hero.no-photo {grid-template-columns:1fr;max-width:740px;}
 .simple-page {max-width:990px;line-height:1.58;}
-.talks-page {width:min(calc(100% - 48px),1120px);max-width:1120px;}
 .simple-page h1 {margin:0 0 24px;}
 .simple-page h2 {font-size:1.28rem;margin:0 0 13px;}
 .research-introduction {max-width:860px;}
@@ -54,25 +53,21 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.28}h1{font-size:clamp(2.15rem,4.7
 .invited-mark {color:var(--accent);font-weight:bold;}
 .talk-note {font-size:.85rem;color:var(--muted);margin-top:22px;}
 @media(max-width:650px) {
-.talks-page{width:min(calc(100% - 32px),1120px);}
 .simple-page h1{margin-bottom:20px}
 .simple-page h2{font-size:1.17rem}
 .reference-list li,.talk-list li{margin-bottom:13px}
 }
 
 /* Events follow the same compact one-line list style as Talks. */
-.events-page {width:min(calc(100% - 48px),1120px);max-width:1120px;}
 .event-list {padding-left:22px;margin:0;}
 .event-list li {padding-left:2px;margin:0 0 10px;}
 .event-list time {font-variant-numeric:tabular-nums;white-space:nowrap;}
 @media(max-width:650px){
-  .events-page{width:min(calc(100% - 32px),1120px);}
   .event-list li{margin-bottom:13px;}
 }
 
 
 /* CV: same typography as Research, Talks and Events, compact date + item rows. */
-.cv-compact-page {width:min(calc(100% - 48px),1120px);max-width:1120px;}
 .cv-compact-heading {display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;column-gap:22px;row-gap:6px;margin-bottom:25px;}
 .cv-compact-heading h1 {margin:0;}
 .cv-download {font-size:.93rem;white-space:nowrap;}
@@ -83,7 +78,6 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.28}h1{font-size:clamp(2.15rem,4.7
 .compact-cv-list strong {font-weight:670;}
 .cv-compact-page .section-rule {margin:24px 0 20px;}
 @media(max-width:650px){
-  .cv-compact-page{width:min(calc(100% - 32px),1120px);}
   .compact-cv-list li{grid-template-columns:1fr;row-gap:1px;padding:8px 0;}
   .compact-cv-list .cv-year{font-size:.85rem;}
   .cv-compact-heading{margin-bottom:20px;}
