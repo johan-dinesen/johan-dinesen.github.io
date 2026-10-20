@@ -42,5 +42,3 @@ Review your introductory biography, research themes and 2026 highlights; confirm
 ## Useful references
 
 - GitHub Pages: https://docs.github.com/en/pages/quickstart
-- Nikolaj Thams' reference site: https://nikolajthams.github.io/
-- Source template used by Nikolaj's site (a more complex alternative): https://github.com/alshedivat/al-folio
