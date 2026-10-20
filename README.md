@@ -1,6 +1,6 @@
 # Academic website starter
 
-This is a lightweight, editable academic website designed to resemble the general organization of a minimalist academic portfolio such as Nikolaj Thams's website. It is **not** a copy of his repository and does **not** require Jekyll, Ruby, npm, or a build process.
+This is a lightweight, editable academic website designed to resemble the general organization of a minimalist academic portfolio. It is **not** a copy of his repository and does **not** require Jekyll, Ruby, npm, or a build process.
 
 ## Pages
 
