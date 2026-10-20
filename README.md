@@ -1,30 +1,28 @@
-# Johan V. Dinesen | Compact academic website
+# Johan V. Dinesen academic website: focused 3-page revision
 
-Static HTML/CSS site for GitHub Pages. No build system, Jekyll installation, JavaScript, or package manager is needed.
+This folder contains ONLY the three pages currently under revision: About, Research and Talks. The existing CV, Publications, Teaching and other pages are intentionally not modified or included.
 
-## Pages
-- `index.html`: Home, short biography, and optional portrait.
-- `research.html`: Research interests and selected papers.
-- `publications.html`: Compact publication lists.
-- `talks.html`: Invited talks, contributed talks, and conference organization.
-- `teaching.html`: Course-by-course teaching experience.
-- `cv.html`: Compact online academic CV with a PDF link.
-- `assets/Johan_Dinesen_CV_public.pdf`: Public CV copied from the user-supplied PDF with the telephone number removed.
+## Files
 
-## Add your photo
-Upload your portrait as `assets/profile.jpg`. It will appear on the right of the biography. Without a photo, that area is left empty. If using a `.png` instead, update the filename in `index.html`.
+- `index.html` — restored earlier homepage design, including the optional portrait column.
+- `research.html` — brief research introduction and compact numbered publications, following the general organization of matteobonini.eu/research.html.
+- `talks.html` — one reverse-chronological bulleted list of 14 invited and contributed talks from your September 2026 CV, following the general structure of matteobonini.eu/talks.html.
+- `css/phase1.css` — standalone styling for these three pages, retaining the older homepage CSS.
+- `assets/favicon.svg` — favicon.
 
-## Publishing
-1. Create a public GitHub repository named `USERNAME.github.io`.
-2. Upload the CONTENTS of this folder at the repository root, including `.nojekyll`, `assets/`, and `css/`.
-3. Go to Settings > Pages > Deploy from branch > `main` / `(root)`.
-4. Visit `https://USERNAME.github.io/` once Pages deploys.
+**Portrait:** Place your actual portrait at `assets/profile.jpg`. Until it exists, the About page hides the missing photo rather than showing an image error or an affiliation box. No placeholder profile picture is included.
 
-## Maintaining the site
-To change the navigation tabs, update the `<nav class="site-nav">` in every HTML page. To change typography, spacing or link colors, update `css/style.css`.
+## Upload to your GitHub Pages repository
 
-## Notes
-- Links between HTML pages are relative and work with GitHub Pages and custom domains.
-- Both the web CV and full PDF are included. The PDF copy omits the phone number. Original PDF remains unchanged outside the site files.
-- Publication submission statuses and CV dates come from the September 2026 CV. Verify changes before publishing.
-- The homepage grant item records the April 2026 award date and September 2026 funding start.
+1. Extract the ZIP.
+2. Upload the 3 HTML files, `css/phase1.css`, `assets/favicon.svg` and `.nojekyll` to your repository, keeping the folder structure. Do not remove your other existing files.
+3. Add `assets/profile.jpg` whenever you have a portrait to use.
+4. GitHub Pages will show About (`/`), Research (`/research.html`) and Talks (`/talks.html`).
+
+The new pages deliberately use `css/phase1.css` rather than overwriting `css/style.css`, which avoids modifying the unfinished CV and Teaching pages.
+
+The research bibliography preserves the publication and submission statuses recorded in the September 2026 CV. Please review those statuses before making the site public.
+
+External links to the two published papers use their verified DOIs. Preprint links use the identifiers in the CV.
+
+The email uses your requested obfuscated plain-text format.
