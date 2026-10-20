@@ -69,3 +69,23 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.28}h1{font-size:clamp(2.15rem,4.7
   .events-page{width:min(calc(100% - 32px),1120px);}
   .event-list li{margin-bottom:13px;}
 }
+
+
+/* CV: same typography as Research, Talks and Events, compact date + item rows. */
+.cv-compact-page {width:min(calc(100% - 48px),1120px);max-width:1120px;}
+.cv-compact-heading {display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;column-gap:22px;row-gap:6px;margin-bottom:25px;}
+.cv-compact-heading h1 {margin:0;}
+.cv-download {font-size:.93rem;white-space:nowrap;}
+.compact-cv-section h2 {font-size:1.28rem;margin:0 0 11px;}
+.compact-cv-list {list-style:none;padding:0;margin:0;}
+.compact-cv-list li {display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:17px;margin:0;padding:5px 0;line-height:1.53;}
+.compact-cv-list .cv-year {color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;font-size:.93rem;}
+.compact-cv-list strong {font-weight:670;}
+.cv-compact-page .section-rule {margin:24px 0 20px;}
+@media(max-width:650px){
+  .cv-compact-page{width:min(calc(100% - 32px),1120px);}
+  .compact-cv-list li{grid-template-columns:1fr;row-gap:1px;padding:8px 0;}
+  .compact-cv-list .cv-year{font-size:.85rem;}
+  .cv-compact-heading{margin-bottom:20px;}
+  .compact-cv-section h2{font-size:1.17rem;}
+}
