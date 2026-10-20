@@ -1,52 +1,46 @@
-# Academic website starter
+# Johan V. Dinesen: academic website
 
-This is a lightweight, editable academic website designed to resemble the general organization of a minimalist academic portfolio. It is **not** a copy of his repository and does **not** require Jekyll, Ruby, npm, or a build process.
+A static academic website based on the provided September 2026 academic CV. This package is an editable HTML/CSS project for GitHub Pages, not an imported copy of any other academic site and not a Jekyll site.
 
-## Pages
+## Included pages
 
-- `index.html`: homepage, brief biography, profile photograph, research interests, news
-- `research.html`: research overview and projects
-- `publications.html`: publications, working papers, presentations
-- `cv.html`: CV entries and a print/save-as-PDF button
-- `css/style.css`: typography, colors, layout, responsive behavior, print rules
-- `assets/profile-placeholder.svg`: replace this with your photograph
-- `assets/favicon.svg`: generic initial-based icon, replace if desired
+- `index.html`: biography, affiliation, obfuscated contact email, research interests, and documented highlights
+- `research.html`: research overview and topics linked to preprints
+- `publications.html`: five papers from the CV, grouped by preprints and conference/journal papers
+- `cv.html`: HTML academic CV, including education, employment, papers, awards, organization, invited/contributed talks, visits, secondment, teaching, services, skills
+- `css/style.css`: all style rules (responsive on mobile)
+- `assets/favicon.svg`: JD initials favicon
 
-## Publish on GitHub Pages without using a terminal
+The visible contact address is `johan.dinesen [at] aalto [dot] fi`, as requested. There is **no mailto link**, **no print-CV button**, **no PDF download**, and **no phone number** on the public site. The original CV file is **not included** in this package.
 
-1. Sign in to GitHub. Create a new **public** repository with the exact name `YOUR-GITHUB-USERNAME.github.io` (substitute your GitHub account name). Choose "Add a README" if the form requires initial content.
-2. Extract this ZIP on your computer. Open the GitHub repository, select **Add file > Upload files**, then upload the **contents of the extracted folder**, not the folder itself. `index.html` must be at the top/root of your GitHub repository. GitHub's web uploader does not always include hidden files such as `.nojekyll`; this file is optional for this plain static website, but you can create it with **Add file > Create new file**.
-3. Commit the files. Go to **Settings > Pages > Build and deployment**. Select **Deploy from a branch** and choose the `main` branch, folder `/(root)`, then save.
-4. Open `https://YOUR-GITHUB-USERNAME.github.io/` after GitHub Pages finishes publishing. GitHub says this can take up to approximately 10 minutes.
+## How to publish without installing software
 
-If GitHub does not offer **Add file > Upload files** for multiple folders in the way you expect, use github.dev (press the `.` key in the repository) and drag the extracted files/folders into the file explorer, then commit from Source Control. Alternatively upload each folder's contents with GitHub's web uploader. The key is preserving paths, for example `css/style.css`.
+1. In GitHub, create a **public** repository called `YOUR-GITHUB-USERNAME.github.io`, substituting your GitHub username exactly.
+2. Download and unzip this website. Upload the *contents* of the unzipped directory to the root of that repository, preserving the `css/` and `assets/` directories. `index.html` must be at the top level. Commit the upload.
+3. Go to **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, `main`, and `/(root)`, then **Save**.
+4. Visit `https://YOUR-GITHUB-USERNAME.github.io/`. Your CV appears at `/cv.html`.
 
-## Personalize
+The `.nojekyll` empty file is included to bypass Jekyll processing on GitHub Pages. It is optional for these simple files.
 
-1. Replace every instance of `Your Name`, `Your University`, `your.email@university.edu`, and all bracketed placeholders.
-2. Edit `<title>` and `meta description` in each `.html` page.
-3. Add your real academic portrait at `assets/profile.jpg`; in `index.html`, change the image path from `assets/profile-placeholder.svg` to `assets/profile.jpg`, and update its alternative text to describe the photo.
-4. For your CV, replace the illustrative dates, degrees, experience, teaching, and awards. Remove categories you don't need.
-5. For publications, replace placeholders with proper bibliographic citations and real paper/DOI links. You can hide the peer-reviewed section until you have content.
-6. Add links to Google Scholar, ORCID, GitHub, or your institutional profile in the `link-row` element on `index.html`.
-7. Optionally upload `assets/cv.pdf` and uncomment/add a PDF download link as indicated in `cv.html`. A browser's **Print / Save PDF** action already works without an uploaded PDF.
-8. Adjust colors in `css/style.css` using the variables at the beginning of the file.
-9. Change dates on the example news entries and the footer year as required.
+## Editing and updating
 
-## Editing after launch
+Edit the relevant `.html` file in GitHub and commit the changes. Changes are published automatically.
 
-To make small edits, open a file in GitHub and click the pencil icon. Change the content and click **Commit changes**. GitHub Pages will publish the update automatically.
+- The name, institutional affiliation, degrees, dates, papers, events, awards, services and skills come from your supplied CV, last updated **September 2026**.
+- The *research overview* and *highlights* condense wording from that CV. Review before publishing in case you prefer different phrasing.
+- Publication submission statuses are accurate to the supplied CV's date, not independently checked against journal websites; update them when decisions/publications change.
+- Links to the three arXiv preprints are based on the identifiers in your CV.
+- I have not invented links to a Google Scholar account, ORCID, personal GitHub profile, or your institutional profile. Add verified links when ready.
+- The homepage displays a neutral "JD" initials block, not a stock portrait. If you want a photograph, upload it as `assets/profile.jpg`, and change the `.initial-monogram` element in `index.html` to an `<img>` element. Adjust CSS for `.profile-aside` as needed.
+- You can edit the email's text format on `index.html` and `cv.html`. It is deliberately not clickable.
+- I omitted your telephone number on the public site for privacy. Add it only if you want it discoverable online.
 
-## Check before sharing
+## Before publishing
 
-- All bracketed example text and fictional dated entries have been replaced or removed.
-- Your real email and links are correct.
-- Your photo is suitable for public viewing.
-- Home, Research, Publications, and CV links work on mobile and desktop.
-- No unpublished sensitive material appears anywhere in the site.
+Review your introductory biography, research themes and 2026 highlights; confirm all names and dates; decide whether you want to add a photo; check that any manuscript status has not changed since September 2026.
 
-## Reference and alternative
-- Original Jekyll template that his repo was forked from: https://github.com/alshedivat/al-folio
-- Official GitHub Pages setup: https://docs.github.com/en/pages/quickstart
+## Useful references
 
-If you want the same Jekyll foundation rather than a simple HTML lookalike, use the **Use this template** button on al-folio and follow its quick-start guide. Its `gh-pages` deployment instructions are different from the `main` branch setup for this static starter.
+- GitHub Pages: https://docs.github.com/en/pages/quickstart
+- Nikolaj Thams' reference site: https://nikolajthams.github.io/
+- Source template used by Nikolaj's site (a more complex alternative): https://github.com/alshedivat/al-folio
