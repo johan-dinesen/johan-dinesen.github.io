@@ -123,3 +123,13 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.28}h1{font-size:clamp(2.15rem,4.7
   filter: grayscale(1);
 }
 
+
+/* One-page navigation: show exactly one existing page view at a time.
+   Without JavaScript, all content remains readable and fragment links work. */
+html[data-active-page] .site-view { display: none; }
+html[data-active-page="about"] .site-view[data-page="about"],
+html[data-active-page="research"] .site-view[data-page="research"],
+html[data-active-page="talks"] .site-view[data-page="talks"],
+html[data-active-page="events"] .site-view[data-page="events"],
+html[data-active-page="teaching"] .site-view[data-page="teaching"],
+html[data-active-page="cv"] .site-view[data-page="cv"] { display: block; }
