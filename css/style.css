@@ -44,6 +44,7 @@ p { margin-bottom:17px }
   .primary-nav { display:grid;grid-template-columns:repeat(6,minmax(0,1fr));width:100%;gap:0;flex-wrap:nowrap;white-space:nowrap }
   .primary-nav a { display:flex;align-items:center;justify-content:center;min-width:0;margin:0;padding:13px 0 11px;text-align:center }
   .page-content { padding-top:43px }
+  h1 { font-size:clamp(1.5rem,5.8vw,2.15rem) }
   .hero { grid-template-columns:1fr;gap:25px }
   .profile-photo { width:100%;max-width:300px;margin:2px 0 }
   .section { margin-top:38px }
